@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #5f9cff, #7f5cff);
+}
+
+/* MAIN */
+.home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* TITLE */
+.app-title {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.tagline {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD DESIGN */
+.card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* JOIN INPUT */
+.join-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.join-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* BUTTONS */
+.join-box button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.join-box button:hover {
+  background: #009ed6;
+}
+
+/* COMMON BUTTON */
+.card button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card button:hover {
+  background: #009ed6;
+}
+
+/* ✅ CREATE BUTTON (NEW) */
+.create-btn {
+  margin-top: 15px;
+  width: 100%;
+  background: #28c76f !important;
+}
+
+.create-btn:hover {
+  background: #1fa85a !important;
+}
+
+/* HISTORY */
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.history-list li {
+  background: rgba(255,255,255,0.2);
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .app-title {
+    font-size: 36px;
+  }
+}
